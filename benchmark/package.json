@@ -1,5 +1,5 @@
 {
-  "name": "web-ifc-bench",
+  "name": "@ifc-js/web-ifc-bench",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,6 @@
     "detect-gpu": "^4.0.46",
     "fs-extra": "^9.1.0",
     "ts-node": "^10.1.1",
-    "web-ifc": "0.0.36"
+    "@ifc-js/web-ifc": "0.0.36"
   }
 }

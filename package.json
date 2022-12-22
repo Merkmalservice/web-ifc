@@ -1,9 +1,9 @@
 {
-  "name": "web-ifc",
+  "name": "@ifc-js/web-ifc",
   "version": "0.0.36",
   "description": "ifc loading on the web",
-  "main": "web-ifc-api-node.js",
-  "module": "web-ifc-api.js",
+  "main": "dist/web-ifc-api-node.js",
+  "module": "dist/web-ifc-api.js",
   "watch": {
     "build-viewer": {
       "patterns": [
@@ -29,6 +29,7 @@
     "postinstall": "cd examples/viewer && npm install && cd ../browser && npm install && cd ../../benchmark && npm install",
     "gen-schema": "cd src/schema && ts-node gen_functional_types.ts",
     "setup-env": "emsdk_env",
+    "build": "npm run setup-env && npm run build-release-all",
     "build-release": "npm run build-wasm-release && npm run build-api",
     "build-release-all": "npm run build-wasm-release && npm run build-wasm-release-mt && npm run build-api",
     "build-debug": "npm run build-wasm-debug && npm run build-api",
@@ -58,16 +59,16 @@
   },
   "author": "tomvandig",
   "files": [
-    "web-ifc.wasm",
-    "web-ifc-mt.wasm",
-    "web-ifc-api-node.js",
-    "web-ifc-api-node.d.ts",
-    "web-ifc-api.js",
-    "web-ifc-api-browser.js",
-    "web-ifc-api.d.ts",
-    "ifc_schema.d.ts",
-    "ifc_schema_helper.d.ts",
-    "helpers/properties.d.ts"
+    "dist/web-ifc.wasm",
+    "dist/web-ifc-mt.wasm",
+    "dist/web-ifc-api-node.js",
+    "dist/web-ifc-api-node.d.ts",
+    "dist/web-ifc-api.js",
+    "dist/web-ifc-api-browser.js",
+    "dist/web-ifc-api.d.ts",
+    "dist/ifc_schema.d.ts",
+    "dist/ifc_schema_helper.d.ts",
+    "dist/helpers/properties.d.ts"
   ],
   "devDependencies": {
     "@types/jest": "^27.0.3",
